@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>AbstractKMP.h</itemPath>
+      <itemPath>AbstractKMPSections.h</itemPath>
+      <itemPath>AbstractKMP/Area.h</itemPath>
+      <itemPath>Sections/AreaPoint.h</itemPath>
+      <itemPath>Sections/Camera.h</itemPath>
+      <itemPath>AbstractKMP/Camera.h</itemPath>
+      <itemPath>Sections/CannonPoint.h</itemPath>
+      <itemPath>Sections/CheckPath.h</itemPath>
+      <itemPath>Sections/CheckPoint.h</itemPath>
+      <itemPath>AbstractKMP/CheckPoints.h</itemPath>
+      <itemPath>CommonTypes.h</itemPath>
+      <itemPath>Sections/CourseSect.h</itemPath>
+      <itemPath>Libs/EndianBinaryIO.h</itemPath>
+      <itemPath>Sections/EnemyPath.h</itemPath>
+      <itemPath>Sections/EnemyPoint.h</itemPath>
+      <itemPath>AbstractKMP/EnemyRoutes.h</itemPath>
+      <itemPath>Sections/GliderPath.h</itemPath>
+      <itemPath>Sections/GliderPoint.h</itemPath>
+      <itemPath>AbstractKMP/GliderRoutes.h</itemPath>
+      <itemPath>Sections/GlobalObject.h</itemPath>
+      <itemPath>Sections/ItemPath.h</itemPath>
+      <itemPath>Sections/ItemPoint.h</itemPath>
+      <itemPath>AbstractKMP/ItemRoutes.h</itemPath>
+      <itemPath>Sections/JugemPoint.h</itemPath>
+      <itemPath>KMP.h</itemPath>
+      <itemPath>KMPSections.h</itemPath>
+      <itemPath>Sections/KartPoint.h</itemPath>
+      <itemPath>AbstractKMP/KartPoints.h</itemPath>
+      <itemPath>Sections/MissionPoint.h</itemPath>
+      <itemPath>AbstractKMP/Objects.h</itemPath>
+      <itemPath>Sections/PointInfo.h</itemPath>
+      <itemPath>AbstractKMP/RespawnPoints.h</itemPath>
+      <itemPath>AbstractKMP/Routes.h</itemPath>
+      <itemPath>Sections/SectionEntries.h</itemPath>
+      <itemPath>Sections/StageInfo.h</itemPath>
+      <itemPath>AbstractKMP/StageInfo.h</itemPath>
+      <itemPath>Libs/pugiconfig.h</itemPath>
+      <itemPath>Libs/pugiconfig.hpp</itemPath>
+      <itemPath>Libs/pugixml.hpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>AbstractKMP.cpp</itemPath>
+      <itemPath>AbstractKMP/Area.cpp</itemPath>
+      <itemPath>Sections/AreaPoint.cpp</itemPath>
+      <itemPath>Sections/Camera.cpp</itemPath>
+      <itemPath>AbstractKMP/Camera.cpp</itemPath>
+      <itemPath>Sections/CannonPoint.cpp</itemPath>
+      <itemPath>Sections/CheckPath.cpp</itemPath>
+      <itemPath>Sections/CheckPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/CheckPoints.cpp</itemPath>
+      <itemPath>CommonTypes.cpp</itemPath>
+      <itemPath>Sections/CourseSect.cpp</itemPath>
+      <itemPath>Libs/EndianBinaryIO.cpp</itemPath>
+      <itemPath>Sections/EnemyPath.cpp</itemPath>
+      <itemPath>Sections/EnemyPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/EnemyRoutes.cpp</itemPath>
+      <itemPath>Sections/GliderPath.cpp</itemPath>
+      <itemPath>Sections/GliderPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/GliderRoutes.cpp</itemPath>
+      <itemPath>Sections/GlobalObject.cpp</itemPath>
+      <itemPath>Sections/ItemPath.cpp</itemPath>
+      <itemPath>Sections/ItemPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/ItemRoutes.cpp</itemPath>
+      <itemPath>Sections/JugemPoint.cpp</itemPath>
+      <itemPath>KMP.cpp</itemPath>
+      <itemPath>Sections/KartPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/KartPoints.cpp</itemPath>
+      <itemPath>Sections/MissionPoint.cpp</itemPath>
+      <itemPath>AbstractKMP/Objects.cpp</itemPath>
+      <itemPath>Sections/PointInfo.cpp</itemPath>
+      <itemPath>AbstractKMP/RespawnPoints.cpp</itemPath>
+      <itemPath>AbstractKMP/Routes.cpp</itemPath>
+      <itemPath>Sections/StageInfo.cpp</itemPath>
+      <itemPath>AbstractKMP/StageInfo.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>Libs/pugixml.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
+          <commandLine>-mcmodel=medium</commandLine>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>Libs</pElem>
+          </linkerAddLib>
+        </linkerTool>
+      </compileType>
+      <item path="AbstractKMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Area.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Area.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/CheckPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/CheckPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/EnemyRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/EnemyRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/GliderRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/GliderRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/ItemRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/ItemRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/KartPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/KartPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Objects.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Objects.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/RespawnPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/RespawnPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Routes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Routes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/StageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/StageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMPSections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CommonTypes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommonTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KMP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KMPSections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/EndianBinaryIO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Libs/EndianBinaryIO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugiconfig.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugiconfig.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugixml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Libs/pugixml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/AreaPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/AreaPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CannonPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CannonPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CheckPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CheckPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CheckPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CheckPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CourseSect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CourseSect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GliderPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GliderPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GliderPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GliderPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GlobalObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GlobalObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/ItemPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/ItemPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/ItemPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/ItemPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/JugemPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/JugemPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/KartPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/KartPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/MissionPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/MissionPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/PointInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/PointInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/SectionEntries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/StageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/StageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>11</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="AbstractKMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Area.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Area.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/CheckPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/CheckPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/EnemyRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/EnemyRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/GliderRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/GliderRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/ItemRoutes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/ItemRoutes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/KartPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/KartPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Objects.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Objects.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/RespawnPoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/RespawnPoints.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Routes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/Routes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMP/StageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="AbstractKMP/StageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="AbstractKMPSections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="CommonTypes.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="CommonTypes.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KMP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="KMP.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KMPSections.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/EndianBinaryIO.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Libs/EndianBinaryIO.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugiconfig.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugiconfig.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Libs/pugixml.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Libs/pugixml.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/AreaPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/AreaPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/Camera.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/Camera.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CannonPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CannonPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CheckPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CheckPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CheckPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CheckPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/CourseSect.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/CourseSect.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/EnemyPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GliderPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GliderPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GliderPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GliderPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/GlobalObject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/GlobalObject.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/ItemPath.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/ItemPath.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/ItemPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/ItemPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/JugemPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/JugemPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/KartPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/KartPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/MissionPoint.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/MissionPoint.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/PointInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/PointInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/SectionEntries.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Sections/StageInfo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sections/StageInfo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

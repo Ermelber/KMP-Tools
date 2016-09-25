@@ -13,18 +13,19 @@
 #include <cstdlib>
 #include <stdio.h>
 #include <iostream>
-#include "KMP.h"
-#include "Libs/EndianBinaryIO.h"
+#include "AbstractKMP.h"
+#include "Libs/pugixml.hpp"
 
 using namespace std;
-
+using namespace pugi;
 
 int main(int argc, char** argv) {
-    FILE* file = fopen("Gctr_GlideLake.kmp","rb");
-    KMP kmp_data(file);
+    AbstractKMP glide_lake("Gctr_GlideLake.kmp");
+    glide_lake.Write("GlideLake.dat");
     
-    FILE* file2 = fopen("2_save.kmp","wb");
-    kmp_data.Write(file);
+    xml_document doc;
+    xml_parse_result result = doc.load_file("kmp.xml");
+    
     
     cout << "hello";
     return 0;

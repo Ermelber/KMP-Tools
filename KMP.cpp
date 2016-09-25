@@ -12,7 +12,6 @@
  */
 
 #include "KMP.h"
-#include "Sections/EnemyPath.h"
 
 //KMP Header
 

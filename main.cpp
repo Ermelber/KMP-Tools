@@ -16,7 +16,6 @@
 #include "AbstractKMP.h"
 
 using namespace std;
-using namespace pugi;
 
 int main(int argc, char** argv) {
     AbstractKMP glide_lake("Gctr_GlideLake.kmp");

@@ -14,7 +14,6 @@
 #include <stdio.h>
 #include <iostream>
 #include "AbstractKMP.h"
-#include "Libs/pugixml.hpp"
 
 using namespace std;
 using namespace pugi;

@@ -19,11 +19,11 @@
 
 struct __attribute__((packed)) ktptentry_t
 {
-private:
+public:
     Vector3 position;
     Vector3 rotation;
     uint32_t index;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<ktptentry_t>(this);
@@ -32,12 +32,12 @@ public:
 
 struct __attribute__((packed)) enptentry_t
 {
-private:
+public:
     Vector3 position;
     float scale;
     uint32_t unknown_1;
     uint32_t unknown_2;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<enptentry_t>(this);
@@ -46,13 +46,13 @@ public:
 
 struct __attribute__((packed)) enphentry_t
 {
-private:
+public:
     uint16_t start;
     uint16_t length;
     int16_t previous[16];
     int16_t next[16];
     uint32_t unknown;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<enphentry_t>(this);
@@ -61,11 +61,11 @@ public:
 
 struct __attribute__((packed)) itptentry_t
 {
-private:
+public:
     Vector3 position;
     float scale;
     uint32_t unknown;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<itptentry_t>(this);
@@ -74,12 +74,12 @@ public:
 
 struct __attribute__((packed)) itphentry_t
 {
-private:
+public:
     uint16_t start;
     uint16_t length;
     int16_t previous[6];
     int16_t next[6];
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<itphentry_t>(this);
@@ -88,7 +88,7 @@ public:
 
 struct __attribute__((packed)) ckptentry_t
 {
-private:
+public:
     Vector2 point_1;
     Vector2 point_2;
     int8_t respawn_id;
@@ -99,7 +99,7 @@ private:
     int8_t section;
     uint8_t unknown_2;
     uint8_t unknown_3;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<ckptentry_t>(this);
@@ -108,13 +108,13 @@ public:
 
 struct __attribute__((packed)) ckphentry_t
 {
-private:
+public:
     uint8_t start;
     uint8_t length;
     int8_t previous[6];
     int8_t next[6];
     uint16_t unknown;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<ckphentry_t>(this);
@@ -123,7 +123,7 @@ public:
 
 struct __attribute__((packed)) gobjentry_t
 {
-private:
+public:
     uint16_t object_id;
     uint16_t unknown_1;
     Vector3 position;
@@ -134,7 +134,7 @@ private:
     uint16_t visibility;
     uint16_t unknown_2;
     uint16_t unknown_3;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<gobjentry_t>(this);
@@ -143,10 +143,10 @@ public:
 
 struct __attribute__((packed)) potientry_t
 {
-private:
+public:
     Vector3 position;
     uint16_t settings[2];
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<potientry_t>(this);
@@ -155,7 +155,7 @@ public:
 
 struct __attribute__((packed)) areaentry_t
 {
-private:
+public:
     uint8_t mode;
     uint8_t type;
     int8_t came_index;
@@ -167,7 +167,7 @@ private:
     uint16_t unknown_3;
     uint16_t unknown_4;
     uint16_t unknown_5;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<areaentry_t>(this);
@@ -176,7 +176,7 @@ public:
 
 struct __attribute__((packed)) cameentry_t
 {
-private:
+public:
     uint8_t type;
     uint8_t next;
     uint8_t unknown_1;
@@ -193,7 +193,7 @@ private:
     Vector3 viewpoint_1;
     Vector3 viewpoint_2;
     float duration;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<cameentry_t>(this);
@@ -202,12 +202,12 @@ public:
 
 struct __attribute__((packed)) jgptentry_t
 {
-private:
+public:
     Vector3 position;
     Vector3 rotation;
     uint16_t index;
     uint16_t unknown;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<jgptentry_t>(this);
@@ -226,10 +226,10 @@ struct __attribute__((packed)) msptentry_t
 
 struct __attribute__((packed)) stgientry_t
 {
-private:
+public:
     uint8_t nr_laps;
     uint8_t unknown[11];
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<stgientry_t>(this);
@@ -243,12 +243,12 @@ struct __attribute__((packed)) corsentry_t
 
 struct __attribute__((packed)) glptentry_t
 {
-private:
+public:
     Vector3 position;
     float scale;
     uint32_t unknown_1;
     uint32_t unknown_2;
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<glptentry_t>(this);
@@ -257,7 +257,7 @@ public:
 
 struct __attribute__((packed)) glphentry_t
 {
-private:
+public:
     uint8_t start;
     uint8_t length;
     int8_t previous[6];
@@ -265,7 +265,7 @@ private:
     uint32_t unknown_1;
     uint32_t unknown_2;
     //uint8_t idk[8];
-public:
+
     void Write(EndianBinaryWriter& ew)
     {
         ew.WriteObject<glphentry_t>(this);

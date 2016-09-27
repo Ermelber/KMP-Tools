@@ -15,7 +15,7 @@
 
 
 MissionPoint::MissionPoint() {
-    signature = "TPMS";
+    signature = "TPSM";
     nr_entries = 0;
 }
 

@@ -14,7 +14,7 @@
 #include "JugemPoint.h"
 
 JugemPoint::JugemPoint() {
-    signature = "EMAC";
+    signature = "TPGJ";
     nr_entries = 0;
 }
 

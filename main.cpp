@@ -1,6 +1,6 @@
 /*
- * KMPEdit - Made by Ermelber and MKGirlism
- * 2016
+ * KMP Tools - Made by Ermelber and MKGirlism
+ * Copyright 2016 - Ermiisoft
  */
 
 /* 
@@ -12,18 +12,15 @@
 
 #include <cstdlib>
 #include <stdio.h>
-#include <iostream>
 #include "AbstractKMP.h"
 
 using namespace std;
 
 int main(int argc, char** argv) {
-    AbstractKMP glide_lake("Gctr_GlideLake.kmp");
-    glide_lake.Write("GlideLake.dat");
-    
-    xml_document doc;
-    xml_parse_result result = doc.load_file("kmp.xml");
-    
+    AbstractKMP glide_lake("files//Gctr_GlideLake.kmp");
+    glide_lake.Write("files//GlideLake.dat");
+    AbstractKMP battle_course1("files//battle.kmp");
+    battle_course1.Write("files//battle.dat");
     
     cout << "hello";
     return 0;

@@ -14,7 +14,7 @@
 #include "CannonPoint.h"
 
 CannonPoint::CannonPoint() {
-    signature = "EMAC";
+    signature = "TPNC";
     nr_entries = 0;
 }
 

@@ -14,13 +14,15 @@
 #ifndef KARTPOINTS_H
 #define KARTPOINTS_H
 
+#include "../KMPSections.h"
+
 class KartPoints {
 public:
-    KartPoints();
-    KartPoints(const KartPoints& orig);
-    virtual ~KartPoints();
+    KartPoints(KartPoint*);
+    KartPoint* ToKTPT();
 private:
-
+    uint32_t nr_entries;
+    ktptentry_t* entries;
 };
 
 #endif /* KARTPOINTS_H */

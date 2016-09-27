@@ -5,28 +5,25 @@
  */
 
 /* 
- * File:   RespawnPoints.h
+ * File:   StageSettings.h
  * Author: Ermii
  *
- * Created on 25 settembre 2016, 15.32
+ * Created on 27 settembre 2016, 19.21
  */
 
-
-
-
-#ifndef RESPAWNPOINTS_H
-#define RESPAWNPOINTS_H
+#ifndef STAGESETTINGS_H
+#define STAGESETTINGS_H
 
 #include "../KMPSections.h"
 
-class RespawnPoints {
+class StageSettings {
 public:
-    RespawnPoints(JugemPoint*);
-    JugemPoint* ToJGPT();
+    StageSettings(StageInfo*);
+    StageInfo* ToSTGI();
 private:
     uint32_t nr_entries;
-    jgptentry_t* entries;
+    stgientry_t* entries;
 };
 
-#endif /* RESPAWNPOINTS_H */
+#endif /* STAGESETTINGS_H */
 

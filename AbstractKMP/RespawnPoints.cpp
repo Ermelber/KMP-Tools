@@ -13,12 +13,23 @@
 
 #include "RespawnPoints.h"
 
-RespawnPoints::RespawnPoints() {
+RespawnPoints::RespawnPoints(JugemPoint* jgpt) {
+    nr_entries = jgpt->nr_entries;
+    if (nr_entries==0) return;
+    entries = new jgptentry_t[nr_entries];
+    for (int i=0;i<nr_entries;i++)
+        entries[i] = *jgpt->entries[i];
 }
 
-RespawnPoints::RespawnPoints(const RespawnPoints& orig) {
+JugemPoint* RespawnPoints::ToJGPT()
+{
+    JugemPoint* jgpt = new JugemPoint();
+    jgpt->nr_entries = nr_entries;
+    if (nr_entries>0)
+    {
+        jgpt->entries = new jgptentry_t*[nr_entries];
+        for (int i=0;i<nr_entries;i++)
+            jgpt->entries[i] = &entries[i];
+    }
+    return jgpt;
 }
-
-RespawnPoints::~RespawnPoints() {
-}
-

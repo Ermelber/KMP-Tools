@@ -14,13 +14,15 @@
 #ifndef AREA_H
 #define AREA_H
 
+#include "../KMPSections.h"
+
 class Area {
 public:
-    Area();
-    Area(const Area& orig);
-    virtual ~Area();
+    Area(AreaPoint*);
+    AreaPoint* ToAREA();
 private:
-
+    uint32_t nr_entries;
+    areaentry_t* entries;
 };
 
 #endif /* AREA_H */

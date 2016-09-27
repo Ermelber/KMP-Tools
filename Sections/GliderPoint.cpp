@@ -14,7 +14,7 @@
 #include "GliderPoint.h"
 
 GliderPoint::GliderPoint() {
-    signature = "TPGL";
+    signature = "TPLG";
     nr_entries = 0;
 }
 

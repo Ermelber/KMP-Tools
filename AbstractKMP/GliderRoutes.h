@@ -14,13 +14,27 @@
 #ifndef GLIDERROUTES_H
 #define GLIDERROUTES_H
 
+#include "../KMPSections.h"
+
+struct gliderroute_t
+{
+    uint32_t nr_entries;
+    glptentry_t* entries;
+    int8_t previous[6];
+    int8_t next[6];
+    uint32_t unknown_1;
+	uint32_t unknown_2;
+};
+
 class GliderRoutes {
 public:
-    GliderRoutes();
-    GliderRoutes(const GliderRoutes& orig);
-    virtual ~GliderRoutes();
+    GliderRoutes(GliderPoint*,GliderPath*);
+    GliderPoint* ToGLPT();
+    GliderPath* ToGLPH();
 private:
-
+    uint32_t nr_routes;
+    gliderroute_t* routes;
+    uint32_t GetNrPoints();
 };
 
 #endif /* GLIDERROUTES_H */

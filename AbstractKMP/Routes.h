@@ -14,13 +14,24 @@
 #ifndef ROUTES_H
 #define ROUTES_H
 
+#include "../KMPSections.h"
+
+struct route_t
+{
+    uint16_t nr_entries;
+    uint8_t loop;
+    uint8_t setting_2;
+    potientry_t* entries;
+};
+
 class Routes {
 public:
-    Routes();
-    Routes(const Routes& orig);
-    virtual ~Routes();
+    Routes(PointInfo*);
+    PointInfo* ToPOTI();
 private:
-
+    uint16_t nr_routes;
+    route_t* routes;
+    uint16_t GetNrPoints();
 };
 
 #endif /* ROUTES_H */

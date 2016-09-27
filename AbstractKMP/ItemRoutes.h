@@ -14,13 +14,25 @@
 #ifndef ITEMROUTES_H
 #define ITEMROUTES_H
 
+#include "../KMPSections.h"
+
+struct itemroute_t
+{
+    uint32_t nr_entries;
+    itptentry_t* entries;
+    int16_t previous[6];
+    int16_t next[6];
+};
+
 class ItemRoutes {
 public:
-    ItemRoutes();
-    ItemRoutes(const ItemRoutes& orig);
-    virtual ~ItemRoutes();
+    ItemRoutes(ItemPoint*,ItemPath*);
+    ItemPoint* ToITPT();
+    ItemPath* ToITPH();
 private:
-
+    uint32_t nr_routes;
+    itemroute_t* routes;
+    uint32_t GetNrPoints();
 };
 
 #endif /* ITEMROUTES_H */

@@ -14,13 +14,26 @@
 #ifndef CHECKPOINTS_H
 #define CHECKPOINTS_H
 
+#include "../KMPSections.h"
+
+struct checkroute_t
+{
+    uint32_t nr_entries;
+    ckptentry_t* entries;
+    int8_t previous[6];
+    int8_t next[6];
+    uint16_t unknown;
+};
+
 class CheckPoints {
 public:
-    CheckPoints();
-    CheckPoints(const CheckPoints& orig);
-    virtual ~CheckPoints();
+    CheckPoints(CheckPoint*,CheckPath*);
+    CheckPoint* ToCKPT();
+    CheckPath* ToCKPH();
 private:
-
+    uint32_t nr_routes;
+    checkroute_t* routes;
+    uint32_t GetNrPoints();
 };
 
 #endif /* CHECKPOINTS_H */

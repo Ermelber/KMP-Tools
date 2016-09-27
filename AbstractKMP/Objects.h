@@ -14,13 +14,15 @@
 #ifndef OBJECTS_H
 #define OBJECTS_H
 
+#include "../KMPSections.h"
+
 class Objects {
 public:
-    Objects();
-    Objects(const Objects& orig);
-    virtual ~Objects();
+    Objects(GlobalObject*);
+    GlobalObject* ToGOBJ();
 private:
-
+    uint32_t nr_entries;
+    gobjentry_t* entries;
 };
 
 #endif /* OBJECTS_H */

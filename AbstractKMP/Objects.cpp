@@ -13,12 +13,23 @@
 
 #include "Objects.h"
 
-Objects::Objects() {
+Objects::Objects(GlobalObject* gobj) {
+    nr_entries = gobj->nr_entries;
+    if (nr_entries==0) return;
+    entries = new gobjentry_t[nr_entries];
+    for (int i=0;i<nr_entries;i++)
+        entries[i] = *gobj->entries[i];
 }
 
-Objects::Objects(const Objects& orig) {
+GlobalObject* Objects::ToGOBJ()
+{
+    GlobalObject* gobj = new GlobalObject();
+    gobj->nr_entries = nr_entries;
+    if (nr_entries>0)
+    {
+        gobj->entries = new gobjentry_t*[nr_entries];
+        for (int i=0;i<nr_entries;i++)
+            gobj->entries[i] = &entries[i];
+    }
+    return gobj;
 }
-
-Objects::~Objects() {
-}
-

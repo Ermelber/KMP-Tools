@@ -15,7 +15,7 @@
 #define ABSTRACTKMPSECTIONS_H
 
 #include "AbstractKMP/Area.h"
-//#include "AbstractKMP/Camera.h"
+#include "AbstractKMP/CameraPoints.h"
 #include "AbstractKMP/CheckPoints.h"
 #include "AbstractKMP/EnemyRoutes.h"
 #include "AbstractKMP/GliderRoutes.h"
@@ -24,7 +24,7 @@
 #include "AbstractKMP/Objects.h"
 #include "AbstractKMP/RespawnPoints.h"
 #include "AbstractKMP/Routes.h"
-//#include "AbstractKMP/StageInfo.h"
+#include "AbstractKMP/StageSettings.h"
 
 #endif /* ABSTRACTKMPSECTIONS_H */
 

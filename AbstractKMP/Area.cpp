@@ -13,12 +13,23 @@
 
 #include "Area.h"
 
-Area::Area() {
+Area::Area(AreaPoint* area) {
+    nr_entries = area->nr_entries;
+    if (nr_entries==0) return;
+    entries = new areaentry_t[nr_entries];
+    for (int i=0;i<nr_entries;i++)
+        entries[i] = *area->entries[i];
 }
 
-Area::Area(const Area& orig) {
+AreaPoint* Area::ToAREA()
+{
+    AreaPoint* area = new AreaPoint();
+    area->nr_entries = nr_entries;
+    if (nr_entries>0)
+    {
+        area->entries = new areaentry_t*[nr_entries];
+        for (int i=0;i<nr_entries;i++)
+            area->entries[i] = &entries[i];
+    }
+    return area;
 }
-
-Area::~Area() {
-}
-

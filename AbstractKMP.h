@@ -33,7 +33,7 @@ private:
     void ToKMP();
     KMP* kmp_data;
 public:
-    KartPoints* kart_point;
+    KartPoints* kart_points;
     EnemyRoutes* enemy_routes;
     ItemRoutes* item_routes;
     CheckPoints* check_points;
@@ -41,8 +41,8 @@ public:
     Routes* routes;
     RespawnPoints* respawn_points;
     Area* area;
-    //CameraPoints* camera;
-    //StageInformation* stage_info;
+    CameraPoints* camera;
+    StageSettings* settings;
     GliderRoutes* glider_routes;
 };
 

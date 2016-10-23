@@ -16,10 +16,12 @@
 
 #include "Libs/EndianBinaryIO.h"
 #include "AbstractKMPSections.h"
+#include "Libs/pugixml.hpp"
 #include "KMP.h"
 #include <iostream>
 
 using namespace std;
+using namespace pugi;
 
 class AbstractKMP {
 public:
@@ -28,10 +30,13 @@ public:
     AbstractKMP(string);    
     void Write(FILE*);
     void Write(string);
+    void WriteXML(string);
 private:
     void FromKMP();
     void ToKMP();
+    void ToXML();
     KMP* kmp_data;
+    xml_document* xml_data;
 public:
     KartPoints* kart_points;
     EnemyRoutes* enemy_routes;

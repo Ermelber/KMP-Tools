@@ -81,3 +81,16 @@ void AbstractKMP::Write(string filename)
     ToKMP();
     kmp_data->Write(file_stream);
 }
+void AbstractKMP::WriteXML(string filename)
+{
+    //FILE* text_file_stream = fopen(filename.c_str(),"w");
+    ToXML();
+    xml_data->save_file(filename.c_str());
+}
+
+void AbstractKMP::ToXML()
+{
+    xml_data=new xml_document();
+    xml_data->append_child("kmp");//.append_attribute("version") = "1.0";
+    enemy_routes->ToXML(xml_data);
+}

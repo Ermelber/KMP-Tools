@@ -15,6 +15,7 @@
 #define ENEMYROUTES_H
 
 #include "../KMPSections.h"
+#include "../Libs/pugixml.hpp"
 
 struct enemyroute_t
 {
@@ -23,6 +24,7 @@ struct enemyroute_t
     int16_t previous[16];
     int16_t next[16];
     uint32_t unknown;
+    void ToXML(pugi::xml_node&);
 };
 
 class EnemyRoutes {
@@ -30,6 +32,7 @@ public:
     EnemyRoutes(EnemyPoint*,EnemyPath*);
     EnemyPoint* ToENPT();
     EnemyPath* ToENPH();
+    void ToXML(pugi::xml_document*);
 private:
     uint32_t nr_routes;
     enemyroute_t* routes;

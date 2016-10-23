@@ -22,6 +22,8 @@ int main(int argc, char** argv) {
     AbstractKMP battle_course1("files//battle.kmp");
     battle_course1.Write("files//battle.dat");
     
+    glide_lake.WriteXML("files//prova.xml");
+    
     cout << "hello";
     return 0;
 }

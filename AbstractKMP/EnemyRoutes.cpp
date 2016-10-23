@@ -13,6 +13,8 @@
 
 #include "EnemyRoutes.h"
 
+using namespace std;
+
 EnemyRoutes::EnemyRoutes(EnemyPoint* enpt, EnemyPath* enph) {
     nr_routes = enph->nr_entries;
     if (nr_routes==0) return;
@@ -88,4 +90,33 @@ EnemyPath* EnemyRoutes::ToENPH()
         }
     }
     return enph;
+}
+
+void enemyroute_t::ToXML(pugi::xml_node& node)
+{
+    node.append_attribute("next");
+    node.append_attribute("previous");
+    node.append_attribute("unknown");
+    string next_attribute = "";
+    string prev_attribute = "";
+    string unkn_attribute = "";
+    unkn_attribute += unknown;
+    for (int i=0;i<16;i++)
+    {
+        next_attribute += next[i] + " ";
+        prev_attribute += previous[i] + " ";
+    }
+    node.attribute("next") = next_attribute.c_str();
+    node.attribute("previous") = prev_attribute.c_str();
+    node.attribute("unknown") = unkn_attribute.c_str();
+}
+
+void EnemyRoutes::ToXML(pugi::xml_document* xml)
+{
+    xml->child("kmp").append_child("enemy");
+    for (int path=0;path<nr_routes;path++)
+        xml->child("kmp").child("enemy").append_child("route");
+    pugi::xml_node routes_node = xml->child("kmp").child("enemy").child("route");
+    for (int path=0;path<nr_routes;path++,routes_node = routes_node.next_sibling("route"))
+        routes[path].ToXML(routes_node);
 }

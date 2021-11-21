@@ -35,8 +35,11 @@ struct __attribute__((packed)) enptentry_t
 public:
     Vector3 position;
     float scale;
-    uint32_t unknown_1;
-    uint32_t unknown_2;
+    ushort mush;
+    byte drift;
+    byte flags;
+    short path_find;
+    short max_search_y_offset;
 
     void Write(EndianBinaryWriter& ew)
     {

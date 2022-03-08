@@ -67,7 +67,8 @@ struct __attribute__((packed)) itptentry_t
 public:
     Vector3 position;
     float scale;
-    uint32_t unknown;
+    uint16_t fly;
+    uint16_t PlayerScanRadius;
 
     void Write(EndianBinaryWriter& ew)
     {

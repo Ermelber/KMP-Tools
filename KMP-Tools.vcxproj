@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractKMP.cpp" />
+    <ClCompile Include="AbstractKMP\Area.cpp" />
+    <ClCompile Include="AbstractKMP\CameraPoints.cpp" />
+    <ClCompile Include="AbstractKMP\CheckPoints.cpp" />
+    <ClCompile Include="AbstractKMP\EnemyRoutes.cpp" />
+    <ClCompile Include="AbstractKMP\GliderRoutes.cpp" />
+    <ClCompile Include="AbstractKMP\ItemRoutes.cpp" />
+    <ClCompile Include="AbstractKMP\KartPoints.cpp" />
+    <ClCompile Include="AbstractKMP\Objects.cpp" />
+    <ClCompile Include="AbstractKMP\RespawnPoints.cpp" />
+    <ClCompile Include="AbstractKMP\Routes.cpp" />
+    <ClCompile Include="AbstractKMP\StageInfo.cpp" />
+    <ClCompile Include="AbstractKMP\StageSettings.cpp" />
+    <ClCompile Include="CommonTypes.cpp" />
+    <ClCompile Include="KMP.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sections\AreaPoint.cpp" />
+    <ClCompile Include="Sections\Camera.cpp" />
+    <ClCompile Include="Sections\CannonPoint.cpp" />
+    <ClCompile Include="Sections\CheckPath.cpp" />
+    <ClCompile Include="Sections\CheckPoint.cpp" />
+    <ClCompile Include="Sections\CourseSect.cpp" />
+    <ClCompile Include="Sections\EnemyPath.cpp" />
+    <ClCompile Include="Sections\EnemyPoint.cpp" />
+    <ClCompile Include="Sections\GliderPath.cpp" />
+    <ClCompile Include="Sections\GliderPoint.cpp" />
+    <ClCompile Include="Sections\GlobalObject.cpp" />
+    <ClCompile Include="Sections\ItemPath.cpp" />
+    <ClCompile Include="Sections\ItemPoint.cpp" />
+    <ClCompile Include="Sections\JugemPoint.cpp" />
+    <ClCompile Include="Sections\KartPoint.cpp" />
+    <ClCompile Include="Sections\MissionPoint.cpp" />
+    <ClCompile Include="Sections\PointInfo.cpp" />
+    <ClCompile Include="Sections\StageInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractKMP.h" />
+    <ClInclude Include="AbstractKMPSections.h" />
+    <ClInclude Include="AbstractKMP\Area.h" />
+    <ClInclude Include="AbstractKMP\CameraPoints.h" />
+    <ClInclude Include="AbstractKMP\CheckPoints.h" />
+    <ClInclude Include="AbstractKMP\EnemyRoutes.h" />
+    <ClInclude Include="AbstractKMP\GliderRoutes.h" />
+    <ClInclude Include="AbstractKMP\ItemRoutes.h" />
+    <ClInclude Include="AbstractKMP\KartPoints.h" />
+    <ClInclude Include="AbstractKMP\Objects.h" />
+    <ClInclude Include="AbstractKMP\RespawnPoints.h" />
+    <ClInclude Include="AbstractKMP\Routes.h" />
+    <ClInclude Include="AbstractKMP\StageInfo.h" />
+    <ClInclude Include="AbstractKMP\StageSettings.h" />
+    <ClInclude Include="CommonTypes.h" />
+    <ClInclude Include="KMP.h" />
+    <ClInclude Include="KMPSections.h" />
+    <ClInclude Include="Sections\AreaPoint.h" />
+    <ClInclude Include="Sections\Camera.h" />
+    <ClInclude Include="Sections\CannonPoint.h" />
+    <ClInclude Include="Sections\CheckPath.h" />
+    <ClInclude Include="Sections\CheckPoint.h" />
+    <ClInclude Include="Sections\CourseSect.h" />
+    <ClInclude Include="Sections\EnemyPath.h" />
+    <ClInclude Include="Sections\EnemyPoint.h" />
+    <ClInclude Include="Sections\GliderPath.h" />
+    <ClInclude Include="Sections\GliderPoint.h" />
+    <ClInclude Include="Sections\GlobalObject.h" />
+    <ClInclude Include="Sections\ItemPath.h" />
+    <ClInclude Include="Sections\ItemPoint.h" />
+    <ClInclude Include="Sections\JugemPoint.h" />
+    <ClInclude Include="Sections\KartPoint.h" />
+    <ClInclude Include="Sections\MissionPoint.h" />
+    <ClInclude Include="Sections\PointInfo.h" />
+    <ClInclude Include="Sections\SectionEntries.h" />
+    <ClInclude Include="Sections\StageInfo.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a4b6dc7e-07e9-4d77-b830-bf25759f6be1}</ProjectGuid>
+    <RootNamespace>KMPTools</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

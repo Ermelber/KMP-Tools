@@ -99,10 +99,10 @@ public:
     int8_t type;
     int8_t previous;
     int8_t next;
-    uint8_t unknown_1;
+    uint8_t clip_id;
     int8_t section;
-    uint8_t unknown_2;
-    uint8_t unknown_3;
+    int8_t unknown_1;
+    int8_t unknown_2;
 
     void Write(EndianBinaryWriter& ew)
     {

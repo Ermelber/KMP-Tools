@@ -167,10 +167,11 @@ public:
     Vector3 position;
     Vector3 rotation;
     Vector3 scale;
+    uint16_t settings_1;
+    uint16_t settings_2;
+    sbyte_t route_ID;
+    sbyte_t enemy_ID;
     uint16_t unknown_2;
-    uint16_t unknown_3;
-    uint16_t unknown_4;
-    uint16_t unknown_5;
 
     void Write(EndianBinaryWriter& ew)
     {

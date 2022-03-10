@@ -35,8 +35,11 @@ struct __attribute__((packed)) enptentry_t
 public:
     Vector3 position;
     float scale;
-    uint32_t unknown_1;
-    uint32_t unknown_2;
+    ushort mush;
+    byte drift;
+    byte flags;
+    short path_find;
+    short max_search_y_offset;
 
     void Write(EndianBinaryWriter& ew)
     {
@@ -64,7 +67,8 @@ struct __attribute__((packed)) itptentry_t
 public:
     Vector3 position;
     float scale;
-    uint32_t unknown;
+    uint16_t fly;
+    uint16_t PlayerScanRadius;
 
     void Write(EndianBinaryWriter& ew)
     {
@@ -95,10 +99,10 @@ public:
     int8_t type;
     int8_t previous;
     int8_t next;
-    uint8_t unknown_1;
+    uint8_t clip_id;
     int8_t section;
-    uint8_t unknown_2;
-    uint8_t unknown_3;
+    int8_t unknown_1;
+    int8_t unknown_2;
 
     void Write(EndianBinaryWriter& ew)
     {
@@ -163,10 +167,11 @@ public:
     Vector3 position;
     Vector3 rotation;
     Vector3 scale;
+    uint16_t settings_1;
+    uint16_t settings_2;
+    sbyte_t route_ID;
+    sbyte_t enemy_ID;
     uint16_t unknown_2;
-    uint16_t unknown_3;
-    uint16_t unknown_4;
-    uint16_t unknown_5;
 
     void Write(EndianBinaryWriter& ew)
     {
